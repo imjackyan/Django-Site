@@ -8,15 +8,16 @@
 		<meta name="keywords" content="Jack Yan Web Site Art Portfolio imjackyan programming">
 		<meta name="author" content="Jack Yan">
 
-		<link rel="icon" type="image/png" href="img/icon/J.png">
-        <link rel="stylesheet" href="css/common.css" media="screen" charset="utf-8">
-        <link rel="stylesheet" href="css/cube.css" media="screen" charset="utf-8">
+		<!-- <link rel="icon" type="image/png" href="img/icon/J.png"> -->
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'common/css/common.css' %}">
+        <link rel="stylesheet" href="{% static 'home/css/cube.css' %}" media="screen" charset="utf-8">
 
-		<script src="js/jquery.js"></script>
-        <script src="js/cube.js"></script>
-        <script src="js/greensock/TweenMax.min.js"></script>
-        <script src="js/greensock/TimelineMax.min.js"></script>
-        <script src="js/common.js"></script>
+		<script src="{% static 'common/js/jquery.js' %}"></script>
+        <script src="{% static 'home/js/cube.js' %}"></script>
+        <script src="{% static 'common/js/greensock/TweenMax.min.js' %}"></script>
+        <script src="{% static 'common/js/greensock/TimelineMax.min.js' %}"></script>
+        <script src="{% static 'common/js/common.js' %}"></script>
 
     </head>
     <body>
@@ -42,11 +43,11 @@
                 width:50%;position:absolute;height:200px;bottom:0;
             }
             .page_option .circ{
-                width:50px;height:50px;border:1px solid white;
-                border-radius:50%;bottom:30%;color:white;line-height: 46px; font-size: 25px;font-weight: 100;
+                width:100px;height:100px;border:1px solid white;
+                border-radius:50%;bottom:30%;color:white;line-height: 95px; font-size: 25px;font-weight: 100;
                 text-decoration: none; opacity:0.3;transition: 0.3s ease;
             }
-            .page_option .circ:hover{opacity:1;}
+            .page_option .circ:hover{opacity:1;background:lightblue;color:black;}
         </style>
         <script type="text/javascript">
             //forces firefox to reload on back-button
